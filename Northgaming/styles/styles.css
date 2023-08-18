@@ -1,0 +1,108 @@
+* {
+    margin:0;
+    color: wheat;
+}
+
+body{
+    background-image: url("../images/397583-wallpaper-asus-rog-desktop-computer-set-up-4k.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.float-right{
+    display: block;
+    float: right;
+    margin-left: 5px;
+}
+
+
+/* CONTENIDO HEADER*/
+
+
+#logoCompania{
+    text-align: center;
+    font-size: 100px;
+    align-content: center;
+    color: azure;
+}
+
+#menu {
+    background-color: blueviolet;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0px;
+}
+
+#menu div{
+    background-color: rgba(red 244,green 87,blue 235, alpha 0.5);
+    margin: 0px;
+}
+
+#menu div ul li{
+    background-color: rgb(129, 74, 160);
+    list-style: none;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+#menu div ul li:hover{
+    background-color: rgb(93, 52, 117);
+}
+
+#menu div ul li a{
+    display: inline-block;
+    margin: o;
+    padding: 10px;
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#login-register-button{
+    display: flex;
+    float: right;
+}
+
+/* CONTENIDO */
+.content{
+    background-color: rgba(128, 90, 138, 0.26);
+    width: 80%;
+    /* height: 1000px; */
+    padding: 20px;
+    margin: 20px auto; 
+}
+
+
+/* FORMULARIOS */
+
+.warning{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-grup{
+    background-color: rgb(43, 68, 90);
+    width: 45%;
+    /* height: 30px; */
+    margin: auto;
+    margin-top: 20px;
+}
+
+.form-input{
+    width: 90%;
+    color:black;
+    padding: 10px;
+}
+
+.form-label{
+    font-size: 20px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
