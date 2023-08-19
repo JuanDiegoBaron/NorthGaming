@@ -1,5 +1,7 @@
 <?php
 
+include_once("../db/connection.php");
+
 class usuario{
 
     private $idUsuario;
@@ -8,6 +10,28 @@ class usuario{
     private $fechaNacimiento;
     private $contraseña;
     private $favoritos;
+
+    public function __construct($nombreUsuario,$mail,$fechaNacimiento,$contraseña,$favoritos) {
+        $this->nombreUsuario = $nombreUsuario;
+        $this->mail = $mail;
+        $this->fechaNacimiento = $fechaNacimiento;
+        $this->contraseña = $contraseña;
+        $this->favoritos = $favoritos;
+    }
+
+    public function crearUsuario(){
+
+        $link = Conection::connect();
+        $sql = "INSERT INTO usuarios VALUES(null,'".$this->getNombreUsuario()."','".$this->getMail()."','".$this->getFechaNacimiento()."','".$this->getContraseña()."','".$this->getFavoritos()."');";
+            $stmt = $link->prepare($sql);
+            if( $stmt->execute() ){
+                echo "Successful registration!";                             
+            }
+            else{
+                echo "Something is wrong!";
+            }
+
+    }
 
     /**
      * Get the value of favoritos
